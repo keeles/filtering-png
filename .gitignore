@@ -1,0 +1,11 @@
+sepia/*
+!sepia/.gitkeep
+dithered/*
+!dithered/.gitkeep
+grayscaled/*
+!grayscaled/.gitkeep
+unzipped/*
+!unzipped/.gitkeep
+myfile.zip/*
+node_modules/
+./node_modules
