@@ -18,8 +18,8 @@ const pathSepia = path.join(__dirname, "sepia");
 IOhandler
 .unzip(zipFilePath, "unzipped")
 .then(() => IOhandler.readDir("unzipped")) 
-//.then((arrayOfPNG) => IOhandler.grayScaleAll(arrayOfPNG))
-//.then((arrayOfPNG) => IOhandler.ditherAll(arrayOfPNG)) //** Remove comments on this line to try the dithering filter
-.then((arrayOfPNG) => IOhandler.sepiaAll(arrayOfPNG)) // ** Remove comments on this line to try the Sepia filter (Filter not producing intended result - any idea why?)
+.then((arrayOfPNG) => IOhandler.grayScaleAll(arrayOfPNG))
+//.then((arrayOfPNG) => IOhandler.ditherAll(arrayOfPNG)) // ** Remove comments on this line to try the dithering filter
+//.then((arrayOfPNG) => IOhandler.sepiaAll(arrayOfPNG)) // ** Remove comments on this line to try the Sepia filter 
 .then(() => console.log("All images have been grayscaled"))
 .catch((err) => console.log(err))
